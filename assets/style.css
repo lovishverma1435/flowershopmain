@@ -1,0 +1,51 @@
+    
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@layer utilities {
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Gilroy";
+    }
+
+    a {
+      text-decoration: none;
+      font-family: "Gilroy";
+      text-wrap: nowrap;
+    }
+
+    button {
+      font-family: "Gilroy";
+    }
+
+    .user-id {
+      @apply lg:font-medium font-normal lg:text-base text-[12px] lg:leading-[19.2px] leading-[16px] mt-2 text-[#121212];
+    }
+
+    .footer-head {
+      @apply text-[21px] font-medium leading-[21.5px] text-[#808080] mb-6;
+    }
+
+    .all-prod {
+      @apply font-medium leading-5 tracking-[2.5%] flex gap-2;
+    }
+    
+    .header_links {
+      @apply text-[#121212] font-medium leading-5 cursor-pointer;
+    }
+
+    .navbar_grid {
+      @apply md:grid md:grid-cols-2;
+    }
+
+    .navtext_contain {
+      @apply justify-center items-center md:py-8 p-3 sm:p-4;
+    }
+  }
